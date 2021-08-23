@@ -6,9 +6,9 @@
 }
 body{
   background: rgb(0, 0, 0);
-  --skin:rgba(253, 37, 170, 0.575);
+  --skin:rgba(253, 37, 170, 0.781);
   --cancel: transparent;
-  --shadow: rgb(47, 0, 255);
+  --shadow: rgb(0, 17, 255);
 
 }
 .Character{
