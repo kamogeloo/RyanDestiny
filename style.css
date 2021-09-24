@@ -2,24 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-y: hidden;
+    
 }
 body{
-  background: rgb(0, 0, 0);
-  --skin:rgba(253, 37, 170, 0.781);
+  background: #000000;
+  --skin:rgba(255, 0, 76, 0.788);
   --cancel: transparent;
   --shadow: rgb(0, 17, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   perspective: 1000px;
+   color: white;
+   background-image: url(/3f7c2e51d5f75beabec6e5803551dc80.gif);
 
 }
 .Character{
+    transform-style: preserve-3d;
     position: relative;
     align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     
- 
-    
-    
+     
   
 }
+
 img{
     
     position: relative;
@@ -30,15 +39,18 @@ img{
     z-index: 0;
     
 }
-.Ryan{
+.Person{
+    margin-top: 30px;
     position: relative;
     top:-500px;
     display: block;
-    width:500px;
+    width:600px;
     height: 500px;
     margin-left: auto;
     margin-right:auto;
     z-index: 0;
+    transition: all 0.75s ease-out;
+    background: transparent;
     
    
     
@@ -61,6 +73,7 @@ img{
     transform: rotate(15deg);
     z-index: 3;
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
     
 }
 .hair{
@@ -74,7 +87,8 @@ img{
     border-radius:80% 30% 20% 25%;
     transform: rotate(15deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
-    ;
+    transition: all 0.75s ease-out;
+    
 }
 .hair1{
     position: relative;
@@ -87,6 +101,7 @@ img{
     border-radius:10% 10% 30% 55%;
     transform: rotate(35deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
     
 
 }
@@ -101,6 +116,7 @@ img{
     border-radius:80% 20% 10% 10%;
     transform: rotate(95deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
     
 
 }
@@ -115,6 +131,7 @@ img{
     border-radius:80% 50% 30% 10%;
     transform: rotate(33deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 
 }
 .neck{
@@ -127,6 +144,7 @@ img{
     border-right: 45px solid transparent;
     border-bottom: 35px solid var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .left-shoulder{
     position: relative;
@@ -138,6 +156,7 @@ img{
     border-radius: 50% 50% 50% 50%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .right-shoulder{
     position: relative;
@@ -148,6 +167,7 @@ img{
     height:37px;
     border-radius: 50% 50% 80% 50%;
     background: var(--skin);
+    transition: all 0.75s ease-out;
     
 }
 .middleboob{
@@ -159,6 +179,7 @@ img{
     height:90px;
     border-radius: 10% 20% 40% 40%;
     background: var(--skin);
+    transition: all 0.75s ease-out;
 }
 .upper{
     position: relative;
@@ -170,6 +191,7 @@ img{
     border-right: 58px solid transparent;
     border-top: 45px solid var(--skin);
     transform: rotate(-30deg);
+    transition: all 0.75s ease-out;
     
 }
 .upper-right{
@@ -183,6 +205,7 @@ img{
     border-top: 40px solid var(--skin);
     transform: rotate(30deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .middleupper{
     position: relative;
@@ -194,6 +217,7 @@ img{
     transform: rotate(25deg);
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .left-hip{
     position: relative;
@@ -206,6 +230,7 @@ img{
     transform: rotate(40deg);
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .left-thigh{
     position: relative;
@@ -218,6 +243,7 @@ img{
     background:var(--skin);
     border-radius: 10%;
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .left-thigh-btm{
     position: relative;
@@ -230,6 +256,7 @@ img{
     background: var(--skin);
     border-radius: 10% 10% 60% 10%;
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .left-calve{
     position: relative;
@@ -242,6 +269,7 @@ img{
     background: var(--skin);
     border-radius: 40% 50% 60% 10%;
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .leftboot{
     background: var(--skin);
@@ -254,6 +282,7 @@ img{
     transform: rotate(35deg);
     border-radius: 0% 50% 90% 10%;
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .leftheel{
     background: var(--skin);
@@ -264,6 +293,7 @@ img{
     width: 15px;
     height: 40px;
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
      
 }
 .leftbootop{
@@ -277,6 +307,7 @@ img{
     border-radius: 50% 20% 40% 30%;
     transform: rotate(15deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .leftbootop1{
     background:var(--skin);
@@ -289,6 +320,7 @@ img{
     border-radius: 0% 0% 30% 20%;
     transform: rotate(35deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .leftstilleto{
     background:var(--skin);
@@ -301,6 +333,7 @@ img{
     border-radius: 0% 0% 50% 30%;
     transform: rotate(-15deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
     
 }
 .heelthing{
@@ -313,6 +346,7 @@ img{
     height: 10px;
     border-radius: 50%;
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
     
 }
 .heelthing1{
@@ -325,6 +359,7 @@ img{
     height: 15px;
     border-radius: 50%;
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
     
 }
 .cover{
@@ -337,6 +372,7 @@ img{
     transform: rotate(25deg);
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .right-pelvis{
     position: relative;
@@ -349,6 +385,7 @@ img{
     border-radius: 10px;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .right-thigh{
     position: relative;
@@ -361,6 +398,7 @@ img{
     border-radius:10% 50% 130% 10%;
     background:var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .right-knee{
     position: relative;
@@ -373,6 +411,7 @@ img{
     border-radius:30% 20% 20% 10%;
     background:var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .right-calve{
     position: relative;
@@ -385,6 +424,7 @@ img{
     border-radius:20% 20% 20% 10%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .rightboot{
     position: relative;
@@ -397,6 +437,7 @@ img{
     border-radius:10% 0% 80% 0%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .serethe{
     position: relative;
@@ -409,6 +450,7 @@ img{
     border-radius:60% 0% 0% 40%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .right-heel{
     background: var(--skin);
@@ -419,6 +461,7 @@ img{
     width: 15px;
     height: 20px;
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
      
 }
 .right-heelthing{
@@ -432,6 +475,7 @@ img{
     border-top: 5px solid var(--skin);
     transform: rotate(0deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .right-bootop{
     position: relative;
@@ -444,6 +488,7 @@ img{
     border-radius:0% 0% 80% 80%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .right-bootop1{
     position: relative;
@@ -456,6 +501,7 @@ img{
     border-radius:0% 50% 80% 80%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .right-bootop2{
     position: relative;
@@ -468,6 +514,7 @@ img{
     border-radius:0% 0% 80% 80%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .right-bootop3{
     position: relative;
@@ -480,6 +527,7 @@ img{
     border-radius:0% 0% 50% 50%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .crotch{
     position: relative;
@@ -492,6 +540,7 @@ img{
     border-radius: 15% 15% 15% 15%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .crotch1{
     position: relative;
@@ -504,6 +553,7 @@ img{
     border-radius: 15% 15% 15% 15%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .leftupperarm{
     position: relative;
@@ -516,6 +566,7 @@ img{
     border-radius: 40% 25% 25% 30%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .leftupperarm1{
     position: relative;
@@ -528,6 +579,7 @@ img{
     border-radius: 30% 0% 0% 30%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .leftlowerarm{
     position: relative;
@@ -540,6 +592,7 @@ img{
     border-radius: 70% 10% 30% 70%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .leftlowerarmside{
     position: relative;
@@ -551,6 +604,7 @@ img{
     transform: rotate(10deg);
     border-radius: 10% 10% 10% 10%;
     background:var(--cancel);
+    transition: all 0.75s ease-out;
 }
 .leftlowerarmtop{
     position: relative;
@@ -562,6 +616,7 @@ img{
     transform: rotate(-2deg);
     border-radius: 10% 10% 30% 30%;
     background: var(--cancel);
+    transition: all 0.75s ease-out;
 }
 .left-hand{
     position: relative;
@@ -574,6 +629,7 @@ img{
     border-top: 14px solid var(--skin);
     transform: rotate(-5deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .leftfinger{
     position: relative;
@@ -584,6 +640,7 @@ img{
     height: 30px;
     background: var(--cancel);
     transform: rotate(70deg);
+    transition: all 0.75s ease-out;
     
 }
 .leftfinger1{
@@ -595,6 +652,7 @@ img{
     height: 30px;
     background: var(--cancel);
     transform: rotate(70deg);
+    transition: all 0.75s ease-out;
 }
 .leftfinger2{
     position: relative;
@@ -607,6 +665,7 @@ img{
     border-radius: 10% 10% 50% 50%;
     transform: rotate(80deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .leftfinger3{
     position: relative;
@@ -619,6 +678,7 @@ img{
     border-radius: 10% 10% 50% 50%;
     transform: rotate(50deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .leftfinger4{
     position: relative;
@@ -631,6 +691,7 @@ img{
     border-radius: 10% 10% 50% 50%;
     transform: rotate(40deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .leftfinger5{
     position: relative;
@@ -643,6 +704,7 @@ img{
     border-radius: 10% 10% 50% 50%;
     transform: rotate(40deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .rightupperarm{
     position: relative;
@@ -655,6 +717,7 @@ img{
     border-radius: 40% 25% 25% 30%;
     background: var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .rightupperarm1{
     position: relative;
@@ -667,6 +730,7 @@ img{
     border-radius: 40% 25% 25% 30%;
     background:var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .rightlowerarm{
     position: relative;
@@ -679,6 +743,7 @@ img{
     border-radius: 50% 10% 15% 50%;
     background:var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .rightlowerarm1{
     position: relative;
@@ -691,6 +756,7 @@ img{
     border-radius: 0% 50% 0% 0%;
     background:var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .right-hand{
     position: relative;
@@ -703,6 +769,7 @@ img{
     border-radius: 10% 50% 50% 10%;
     background:var(--skin);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .rightfinger{
     position: relative;
@@ -715,6 +782,7 @@ img{
     border-top: 18px solid var(--skin);
     transform: rotate(65deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .rightfinger1{
     position: relative;
@@ -727,6 +795,7 @@ img{
     border-top: 18px solid var(--skin);
     transform: rotate(60deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .rightfinger2{
     position: relative;
@@ -740,6 +809,7 @@ img{
     border-radius: 50%;
     transform: rotate(-52deg);
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .rightupperarmcancel{
     position: relative;
@@ -751,6 +821,7 @@ img{
     transform: rotate(40deg);
     border-radius: 0% 0% 0% 0%;
     background: var(--cancel);
+    transition: all 0.75s ease-out;
 }
 .rightlegcancel{
     position: relative;
@@ -762,6 +833,7 @@ img{
     transform: rotate(18deg);
     border-radius: 0% 0% 0% 0%;
     background: var(--cancel);
+    transition: all 0.75s ease-out;
 }
 .rightarminnercancel{
     position: relative;
@@ -773,6 +845,7 @@ img{
     transform: rotate(42deg);
     border-radius: 0% 0% 0% 0%;
     background: var(--cancel);
+    transition: all 0.75s ease-out;
 }
 .rightarminnercancel1{
     position: relative;
@@ -784,6 +857,7 @@ img{
     transform: rotate(22deg);
     border-radius: 0% 0% 0% 0%;
     background: var(--cancel);
+    transition: all 0.75s ease-out;
 }
 .rightthighinnercancel{
     position: relative;
@@ -795,6 +869,7 @@ img{
     transform: rotate(107deg);
     border-radius: 0% 0% 0% 0%;
     background: var(--cancel);
+    transition: all 0.75s ease-out;
 }
 .rightbootcancel{
     position: relative;
@@ -806,6 +881,7 @@ img{
     transform: rotate(0eg);
     border-radius: 0% 20% 0% 0%;
     background: var(--cancel);
+    transition: all 0.75s ease-out;
 }
 .rightbootcancel1{
     position: relative;
@@ -817,6 +893,7 @@ img{
     transform: rotate(0eg);
     border-radius: 0% 20% 0% 0%;
     background: var(--cancel);
+    transition: all 0.75s ease-out;
 }
 .rightbootcancel2{
     position: relative;
@@ -828,6 +905,7 @@ img{
     transform: rotate(-30deg);
     border-radius: 50% 50% 50% 50%;
     background: var(--cancel);
+    transition: all 0.75s ease-out;
 }
 .rightbootcancel3{
     position: relative;
@@ -839,6 +917,7 @@ img{
     transform: skew(25deg) rotate(85deg);
     border-radius: 0% 0% 0% 0%;
     background: var(--skin);
+    transition: all 0.75s ease-out;
 }
 .rightbootcancel4{
     position: relative;
@@ -850,6 +929,7 @@ img{
     transform: rotate(0deg);
     border-radius: 0% 50% 30% 50%;
     background: var(--skin);
+    transition: all 0.75s ease-out;
 }
 .leftbootcancel{
     position: relative;
@@ -861,6 +941,7 @@ img{
     transform: skew(-25deg) rotate(15deg);
     border-radius: 0% 0% 0% 0%;
     background: var(--cancel);
+    transition: all 0.75s ease-out;
 }
 .leftcalvecancel{
     position: relative;
@@ -872,6 +953,7 @@ img{
     transform: skew(-25deg) rotate(18deg);
     border-radius: 50% 50% 60% 30%;
     background: var(--cancel);
+    transition: all 0.75s ease-out;
 }
 .leftthighcancel{
     position: relative;
@@ -882,6 +964,7 @@ img{
     height: 60px;
     background: var(--skin);
     transform: rotate(40deg);
+    transition: all 0.75s ease-out;
 }
 .leftthighcancel1{
     position: relative;
@@ -892,6 +975,7 @@ img{
     height: 50px;
     background: var(--skin);
     transform: rotate(40deg);
+    transition: all 0.75s ease-out;
 }
 .leftthighcancel2{
     position: relative;
@@ -902,6 +986,7 @@ img{
     height: 50px;
     background: var(--cancel);
     transform: rotate(30deg);
+    transition: all 0.75s ease-out;
 }
 .rightinnerthighcancel{
     position: relative;
@@ -913,6 +998,7 @@ img{
     background: var(--skin);
     border-radius: 10% 10% 40% 40%;
     transform: rotate(20deg);
+    transition: all 0.75s ease-out;
 }
 .rightarmcancel2{
     position: relative;
@@ -924,6 +1010,7 @@ img{
     background: var(--skin);
     border-radius: 10% 10% 40% 40%;
     transform: rotate(-150deg);
+    transition: all 0.75s ease-out;
 }
 .finalhair{
     position: relative;
@@ -938,6 +1025,7 @@ img{
     transform: rotate(25deg);
     z-index: 3;
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .finalhaircancel{
     position: relative;
@@ -950,6 +1038,7 @@ img{
     border-radius: 50%;
     transform: rotate(25deg);
     z-index: 3;
+    transition: all 0.75s ease-out;
 }
 .eyelash{
     position: relative;
@@ -963,6 +1052,7 @@ img{
     border-bottom: 3px solid var(--skin);
     z-index: 3;
     filter: drop-shadow(1px 2px 10px var(--shadow));
+    transition: all 0.75s ease-out;
 }
 .rightunderarm{
     position: relative;
@@ -973,4 +1063,5 @@ img{
     height:5px;
     transform: skew(25deg) rotate(-25deg);
     background: var(--cancel);
+    transition: all 0.75s ease-out;
 }
