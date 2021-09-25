@@ -52,12 +52,12 @@ h1{
     
 } */
 .Person{
-    margin-top: 30px;
+    margin-top: -30px;
     position: relative;
     top:-500px;
     display: block;
     width:600px;
-    height: 500px;
+    height: 600px;
     margin-left: auto;
     margin-right:auto;
     z-index: 0;
