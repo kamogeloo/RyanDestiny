@@ -95,7 +95,7 @@ container.addEventListener("mouseenter", (e)=>{
 
     //popout effect
 
-    container.style.filter = "drop-shadow(1px 2px 10px yellow)";
+    container.style.filter = "drop-shadow(1px 2px 10px red)";
     container.style.transform = "translateZ(100px)";
 //   heading.style.transform = "translateZ(250px)";
 //   hairstyle.style.transform = "translateZ(20px)";
