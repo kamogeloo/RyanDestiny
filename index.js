@@ -20,7 +20,7 @@ container.addEventListener("mouseenter", (e)=>{
     //popout effect
 
     container.style.filter = "drop-shadow(1px 2px 10px red)";
-    container.style.transform = "translateZ(150px)";
+    container.style.transform = "translateZ(250px)";
     
     //change color of illustration
     let ryan = document.querySelectorAll(".ryan");
