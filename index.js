@@ -12,7 +12,7 @@ container.addEventListener("mousemove", (e) => {
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
 
-container.addEventListener("")
+// container.addEventListener("")
 //animate in
 
 container.addEventListener("mouseenter", (e)=>{
