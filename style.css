@@ -1076,3 +1076,13 @@ h1{
     background: var(--cancel);
     transition: all 0.75s ease-out;
 }
+
+@media only screen and (max-width:600px) {
+    body{
+        width: 100%;
+    }
+    .Character{
+        width: 100%;
+    }
+    
+}
