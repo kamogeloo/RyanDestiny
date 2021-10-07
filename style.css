@@ -14,7 +14,7 @@ body{
   align-items: center;
    perspective: 1000px;
    color: white;
-   background-image: url(./images/3f7c2e51d5f75beabec6e5803551dc80.gif);
+   background-image: url(3f7c2e51d5f75beabec6e5803551dc80.gif);
    background-repeat: no-repeat;
    background-size: 120% 120%;
    
@@ -55,7 +55,7 @@ h1{
     position: relative;
     top:150px;
     display: block;
-    width:600px;
+    width:700px;
     height: 800px;
     margin-left: auto;
     margin-right:auto;
