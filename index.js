@@ -68,18 +68,18 @@ container.addEventListener("mouseleave", (e) =>{
 
     
 });
-container.addEventListener("touchend", (e)=>{
-    card.style.transition = 'all 0.5s ease';
-    card.style.transform= `rotateY(0deg) rotateX(0deg)`;
+// container.addEventListener("touchend", (e)=>{
+//     card.style.transition = 'all 0.5s ease';
+//     card.style.transform= `rotateY(0deg) rotateX(0deg)`;
 
-    //pop back
-    container.style.transform = "translateZ(0px)";
-    container.style.filter = 'none';
+//     //pop back
+//     container.style.transform = "translateZ(0px)";
+//     container.style.filter = 'none';
     
-    let ryan = document.querySelectorAll(".ryan");
-    let i;
-    for(i = 0; i< ryan.length; i++){
-        ryan[i].style.backgroundColor = "";
-    }
-})
+//     let ryan = document.querySelectorAll(".ryan");
+//     let i;
+//     for(i = 0; i< ryan.length; i++){
+//         ryan[i].style.backgroundColor = "";
+//     }
+// })
 
