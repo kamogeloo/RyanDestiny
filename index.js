@@ -40,7 +40,7 @@ container.addEventListener("mouseenter", (e)=>{
 //for phone
 container.addEventListener("touchmove",(e) =>{
     container.style.filter = "drop-shadow(1px 2px 10px red)";
-    container.style.transform = "translateZ(250px)";
+    container.style.transform = "translateZ(300px)";
     
     //change color of illustration
     let ryan = document.querySelectorAll(".ryan");
