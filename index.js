@@ -1,9 +1,13 @@
 const card = document.querySelector('.Character');
 const container = document.querySelector('.Person');
+const audio = new Audio();
+audio.src = "./soundeffect.mp3";
 
 
 
-
+container.addEventListener("mouseover", e =>{
+      audio.play();
+})
 
 container.addEventListener("mousemove", (e) => {
     let xAxis = (window.innerWidth / 2 - e.pageX) /15;

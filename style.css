@@ -14,7 +14,7 @@ body{
   align-items: center;
    perspective: 1000px;
    color: white;
-   background-image: url(3f7c2e51d5f75beabec6e5803551dc80.gif);
+    background-image: url(3f7c2e51d5f75beabec6e5803551dc80.gif); 
    background-repeat: no-repeat;
    background-size: 120% 120%;
    
@@ -30,9 +30,26 @@ body{
     margin-left: auto;
     margin-right: auto;
     
+    
      
   
 }
+.next{
+    width: 200px;
+    height: 80px;
+    background-color: #FDC37F;
+    margin-top: -500px;
+    margin-left: 100px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 h1{
     z-index: 10;
