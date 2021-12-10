@@ -5,6 +5,7 @@
     
 }
 body{
+    height: auto;
   background: #000000;
   --skin:rgba(255, 0, 76, 0.788);
   --cancel: transparent;
@@ -16,7 +17,7 @@ body{
    color: white;
     background-image: url(3f7c2e51d5f75beabec6e5803551dc80.gif); 
    background-repeat: no-repeat;
-   background-size: 120% 120%;
+   background-size: cover;
    
    
 
@@ -34,10 +35,31 @@ body{
      
   
 }
+#changeColor, #transparency{
+    width: 200px;
+    height: 80px;
+    background-color:var(--skin);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    margin-left: -200px;
+    margin-top: -250px;
+    cursor: pointer;
+}
+#transparency{
+    margin-top: 50px;
+}
+a:hover, #changeColor:hover, #transparency:hover{
+    color: white;
+}
 .next{
     width: 200px;
     height: 80px;
-    background-color: #FDC37F;
+    background-color: var(--skin);
     margin-top: -500px;
     margin-left: 100px;
     border: 2px solid black;
